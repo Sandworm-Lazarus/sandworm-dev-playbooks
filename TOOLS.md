@@ -4,7 +4,7 @@
 
 These are executable tools and frameworks, counted separately from agent skills. Their README/source overviews were inspected; this repository has not installed or run them. Links point to the recorded revision.
 
-**15 tools and frameworks in 5 groups.** See [start here](docs/start-here.md) for task-oriented selections.
+**17 tools and frameworks in 7 groups.** See [start here](docs/start-here.md) for task-oriented selections.
 
 | Group | Tools |
 | --- | ---: |
@@ -13,6 +13,8 @@ These are executable tools and frameworks, counted separately from agent skills.
 | [Document ingestion](#document-ingestion) | 5 |
 | [Image workflows](#image-workflows) | 2 |
 | [Coding agents](#coding-agents) | 3 |
+| [AI application SDKs](#ai-application-sdks) | 1 |
+| [API testing](#api-testing) | 1 |
 
 <a id="visual-workflows"></a>
 
@@ -63,3 +65,19 @@ These are executable tools and frameworks, counted separately from agent skills.
 | [OpenHands](https://github.com/OpenHands/OpenHands/tree/7b5aa9eb60bdef7d832743c12cabd537b44b8a41) | จัด coding agents และ automations ผ่าน self-hosted Agent Canvas | App/runtime backend, model access และ sandbox ตาม setup. Agent สามารถเปลี่ยนไฟล์และเรียก tools; จำกัด repository/workspace ตามงาน |
 | [Aider](https://github.com/Aider-AI/aider/tree/5dc9490bb35f9729ef2c95d00a19ccd30c26339c) | ทำ AI pair programming ใน terminal พร้อม repo map และ Git integration | Python, Git และ LLM provider/local endpoint. ตรวจ auto-commit/test behavior; model examples ใน README ไม่ใช่คำแนะนำรุ่นปัจจุบันของคลัง |
 | [OpenCode](https://github.com/anomalyco/opencode/tree/070b980c0b17487dcb94f381cc2eb03953dadb86) | ใช้ coding agent แบบ terminal/desktop พร้อม build และ plan modes | CLI/desktop runtime และ provider configuration. MIT ของ client ไม่รับรองราคา โควตา หรือเงื่อนไขโมเดลของ provider |
+
+<a id="ai-application-sdks"></a>
+
+## AI application SDKs
+
+| Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
+| --- | --- | --- |
+| [Vercel AI SDK](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript | Node 22+ ตาม README ที่อ่าน, provider adapter หรือ gateway และ UI integration ตามงาน. String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route |
+
+<a id="api-testing"></a>
+
+## API testing
+
+| Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
+| --- | --- | --- |
+| [Bruno](https://github.com/usebruno/bruno/tree/60d7517d0545ef82c032c10dcbb6a3c815d246cf) | เก็บ API request collections เป็นไฟล์และรันทดสอบผ่าน desktop/CLI | Desktop app หรือ CLI, API test environment และ credentials ที่แยกจาก collection. Collection อยู่ local และใช้ Git ได้; HTTP requests ยังติดต่อ API เป้าหมาย และ paid editions มี feature scope แยก |

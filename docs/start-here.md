@@ -38,6 +38,13 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [ComfyUI](https://github.com/Comfy-Org/ComfyUI/tree/4d64a8bc072b81c9b47321789b4d83fb7348ae2a) | ประกอบ image/video/audio generation ผ่าน node-graph workflows | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Diffusers](https://github.com/huggingface/diffusers/tree/f598e6e6a99528858b962c1399c45b59a6c25484) | สร้าง diffusion pipelines และปรับ schedulers/models ใน Python | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
+## Test APIs and AI endpoints
+
+| Project | ใช้ทำอะไร | Evidence to collect |
+| --- | --- | --- |
+| [Vercel AI SDK](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [Bruno](https://github.com/usebruno/bruno/tree/60d7517d0545ef82c032c10dcbb6a3c815d246cf) | เก็บ API request collections เป็นไฟล์และรันทดสอบผ่าน desktop/CLI | Version, configuration, one task result, failure behavior and data/permission boundaries |
+
 ## Skill starting points
 
 | Entry | Task | Review |
@@ -51,3 +58,8 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [web-perf](https://github.com/cloudflare/skills/blob/cbf893b954222276bf1af57e5f23379231e0efb9/skills/web-perf/SKILL.md) | วิเคราะห์โหลดหน้าเว็บ Core Web Vitals, network และ performance traces | entry-overview |
 | [vercel-composition-patterns](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/composition-patterns/SKILL.md) | ปรับ React component API ด้วย composition และ compound components | entry-overview |
 | [vercel-react-best-practices](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices/SKILL.md) | ลด waterfalls, bundle และการ render ที่ไม่จำเป็นใน React/Next.js | entry-overview |
+
+## Synthetic privacy trial
+
+Use the original [privacy policy fixtures](../examples/privacy-fixtures.json) to define expected masking behavior in a prototype. Include Thai text, explicit sensitive fields, benign version numbers, already masked values and empty input. These are proposed acceptance criteria; configure your own adapter and recognizers and record observed results before claiming support.
+

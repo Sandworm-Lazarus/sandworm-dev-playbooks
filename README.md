@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Dev Playbooks" width="100%"></p>
 
-<p align="center"><b>30 skill entries · 15 tools · 26 source repositories</b></p>
+<p align="center"><b>30 skill entries · 17 tools · 28 source repositories</b></p>
 
 # Sandworm Dev Playbooks
 
@@ -25,6 +25,8 @@ Developer workflows for debugging, cloud, frontend, coding agents, and evidence-
 | Document ingestion | 5 |
 | Image workflows | 2 |
 | Coding agents | 3 |
+| AI application SDKs | 1 |
+| API testing | 1 |
 
 ## Use the collection
 

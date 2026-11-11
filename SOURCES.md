@@ -2,7 +2,7 @@
 
 [Home](README.md) · [Skill catalog](CATALOG.md) · [Reuse notes](docs/attribution.md)
 
-Snapshot: **2026-11-11**. The 26 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
+Snapshot: **2026-11-11**. The 28 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
 
 Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 
@@ -34,6 +34,8 @@ Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 | [Aider-AI/aider](https://github.com/Aider-AI/aider) · [5dc9490b](https://github.com/Aider-AI/aider/tree/5dc9490bb35f9729ef2c95d00a19ccd30c26339c) | [Apache-2.0](https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/LICENSE.txt) | ตรวจ auto-commit/test behavior; model examples ใน README ไม่ใช่คำแนะนำรุ่นปัจจุบันของคลัง |
 | [anomalyco/opencode](https://github.com/anomalyco/opencode) · [070b980c](https://github.com/anomalyco/opencode/tree/070b980c0b17487dcb94f381cc2eb03953dadb86) | [MIT](https://github.com/anomalyco/opencode/blob/070b980c0b17487dcb94f381cc2eb03953dadb86/LICENSE) | MIT ของ client ไม่รับรองราคา โควตา หรือเงื่อนไขโมเดลของ provider |
 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) · [32fa6f62](https://github.com/firecrawl/firecrawl/tree/32fa6f6273daecc9675d41dc2dab44c61e8cc500) | [AGPL-3.0](https://github.com/firecrawl/firecrawl/blob/32fa6f6273daecc9675d41dc2dab44c61e8cc500/LICENSE) | ใช้ canonical firecrawl/firecrawl; AGPL source และ hosted features/terms ต้องตรวจแยก |
+| [vercel/ai](https://github.com/vercel/ai) · [70e45d58](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | [Apache-2.0](https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/LICENSE) | String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route |
+| [usebruno/bruno](https://github.com/usebruno/bruno) · [60d7517d](https://github.com/usebruno/bruno/tree/60d7517d0545ef82c032c10dcbb6a3c815d246cf) | [MIT source; commercial editions/features separate](https://github.com/usebruno/bruno/blob/60d7517d0545ef82c032c10dcbb6a3c815d246cf/license.md) | Collection อยู่ local และใช้ Git ได้; HTTP requests ยังติดต่อ API เป้าหมาย และ paid editions มี feature scope แยก |
 
 ## Supporting files read in the initial focused review
 

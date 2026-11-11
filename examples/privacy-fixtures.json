@@ -1,0 +1,12 @@
+{
+  "description": "Synthetic product-policy cases for a privacy preprocessing prototype. Expected behavior is a proposed acceptance criterion, not a claim about Presidio defaults. Configure an adapter and language-specific recognizers before execution.",
+  "runtime_tested": false,
+  "cases": [
+    {"id": "email-in-thai-text", "input": "ส่งเอกสารไปที่ nina@example.invalid", "sensitive_spans": ["nina@example.invalid"], "check": "Mask the email while preserving the Thai instruction."},
+    {"id": "email-in-english-text", "input": "Send the draft to alex@example.invalid tomorrow.", "sensitive_spans": ["alex@example.invalid"], "check": "Mask the email and preserve the scheduling context."},
+    {"id": "explicit-name-field", "input": {"customer_name": "บุคคลสมมติ ก", "topic": "สอบถามสินค้า"}, "sensitive_fields": ["customer_name"], "check": "Apply the application's field policy even if a general NER model misses the Thai name."},
+    {"id": "benign-version-number", "input": "ใช้ Python 3.12 และ Node 24 สำหรับตัวอย่าง", "sensitive_spans": [], "check": "Preserve software version numbers; do not redact every number."},
+    {"id": "already-masked", "input": "ติดต่อ [EMAIL_REDACTED] เพื่อยืนยัน", "sensitive_spans": [], "check": "A second preprocessing pass preserves the existing mask."},
+    {"id": "empty-input", "input": "", "sensitive_spans": [], "check": "Return a defined empty result without errors or external model calls."}
+  ]
+}

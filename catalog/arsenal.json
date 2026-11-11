@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-11",
   "timezone": "Asia/Bangkok",
-  "scope": "Focused collection: 30 skill entries and 15 tools. Original review levels retained. No upstream runtime testing.",
+  "scope": "Focused collection: 30 skill entries and 17 tools. Original review levels retained. No upstream runtime testing.",
   "sources": [
     {
       "repo": "trailofbits/skills",
@@ -463,6 +463,38 @@
       "category": "Document ingestion",
       "note": "ใช้ canonical firecrawl/firecrawl; AGPL source และ hosted features/terms ต้องตรวจแยก",
       "recommendation": "README overview; not runtime-tested"
+    },
+    {
+      "repo": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "commit": "70e45d5878494be4b66e325187f865951025059e",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/LICENSE",
+      "license_blob_sha": "6c16c29f41168411dbf6e3ba3a063ce789c27334",
+      "readme_url": "https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/packages/ai/README.md",
+      "readme_blob_sha": "456d3853992ce379bda7e16d04612f0c506041b9",
+      "license": "Apache-2.0",
+      "category": "AI application SDKs",
+      "note": "String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route",
+      "recommendation": "README/license overview; not runtime-tested"
+    },
+    {
+      "repo": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "commit": "60d7517d0545ef82c032c10dcbb6a3c815d246cf",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/usebruno/bruno/blob/60d7517d0545ef82c032c10dcbb6a3c815d246cf/license.md",
+      "license_blob_sha": "f88e206bb5a65c8b70693152a14a678fba471707",
+      "readme_url": "https://github.com/usebruno/bruno/blob/60d7517d0545ef82c032c10dcbb6a3c815d246cf/readme.md",
+      "readme_blob_sha": "08263e4c05b622b99d83196ef128f5aa2e635abe",
+      "license": "MIT source; commercial editions/features separate",
+      "category": "API testing",
+      "note": "Collection อยู่ local และใช้ Git ได้; HTTP requests ยังติดต่อ API เป้าหมาย และ paid editions มี feature scope แยก",
+      "recommendation": "README/license overview; not runtime-tested"
     }
   ],
   "skills": [
@@ -1298,12 +1330,36 @@
       "runtime_tested": false,
       "review_level": "readme-overview",
       "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "vercel/ai",
+      "name": "Vercel AI SDK",
+      "group": "AI application SDKs",
+      "purpose": "ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript",
+      "requires": "Node 22+ ตาม README ที่อ่าน, provider adapter หรือ gateway และ UI integration ตามงาน",
+      "note": "String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route",
+      "url": "https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "usebruno/bruno",
+      "name": "Bruno",
+      "group": "API testing",
+      "purpose": "เก็บ API request collections เป็นไฟล์และรันทดสอบผ่าน desktop/CLI",
+      "requires": "Desktop app หรือ CLI, API test environment และ credentials ที่แยกจาก collection",
+      "note": "Collection อยู่ local และใช้ Git ได้; HTTP requests ยังติดต่อ API เป้าหมาย และ paid editions มี feature scope แยก",
+      "url": "https://github.com/usebruno/bruno/tree/60d7517d0545ef82c032c10dcbb6a3c815d246cf",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
     }
   ],
   "snapshot": "2026-11-11-sandworm-dev-playbooks",
   "collection": {
     "name": "sandworm-dev-playbooks",
     "hub": "https://github.com/Sandworm-Lazarus/sandworm-arsenal",
-    "source_snapshot": "2026-11-11-ai-toolbox"
+    "source_snapshot": "2026-11-11-mcp-typescript-privacy"
   }
 }

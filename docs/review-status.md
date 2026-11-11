@@ -8,9 +8,9 @@ Snapshot: **2026-11-11** · `2026-11-11-sandworm-dev-playbooks`
 | --- | ---: |
 | Skill entries | 30 |
 | Skill collections | 11 |
-| Companion tools | 15 |
-| Tool categories | 5 |
-| Source repositories | 26 |
+| Companion tools | 17 |
+| Tool categories | 7 |
+| Source repositories | 28 |
 | Entry-reviewed | 6 |
 | Entry-overview | 24 |
 | Runtime-tested upstream skills | 0 |
