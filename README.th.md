@@ -10,6 +10,15 @@
 
 คลังนี้มีสกิล 30 entries และเครื่องมือ 17 ตัว พร้อมลิงก์ที่ตรึง commit และคำอธิบายการใช้งาน อ่าน [เส้นทางเริ่มต้น](docs/start-here.md) เพื่อเลือกตามโจทย์
 
+## เครื่องมือที่พัฒนาเอง: Evidence Manifest Checker
+
+ตรวจ artifact hash และ metadata ผลรันโดยไม่ execute คำสั่งใน manifest [Guide](docs/original-tool.md) · [Original work](ORIGINAL_WORK.md).
+
+```bash
+python3 scripts/evidence_check.py --manifest examples/evidence-manifest.json --root .
+python3 -m unittest discover -s tests -v
+```
+
 ## ค้นหาและตรวจข้อมูล
 
 ใช้ Python 3.9+ โดยไม่ต้องติดตั้ง dependencies เพิ่ม

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "description": "Fabricated verification example; matching metadata does not establish real command execution.",
+  "artifacts": [
+    {"path":"examples/sample-artifact.txt","sha256":"62e390f795523013be95f2fd8bdc59dd6ec83a202f6574867b769c3ba3416413"},
+    {"path":"examples/command-result.json","sha256":"baebdf422b6aa3c67bff57abbb616f8a6c324072445106ad4240188123496882"}
+  ],
+  "commands": [
+    {
+      "id":"fabricated-validation",
+      "command":["synthetic-check","--fixture-only"],
+      "result_path":"examples/command-result.json",
+      "expected_exit":0,
+      "expected_result":"passed"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Fabricated artifact for the original evidence checker demonstration.
+No production data or real command execution is represented.

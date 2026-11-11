@@ -1,0 +1,6 @@
+{
+  "description": "Fabricated command metadata; this command was not executed.",
+  "command": ["synthetic-check", "--fixture-only"],
+  "exit_code": 0,
+  "result": "passed"
+}

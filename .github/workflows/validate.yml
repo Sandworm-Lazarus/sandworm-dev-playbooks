@@ -20,7 +20,7 @@ jobs:
           persist-credentials: false
       - name: Validate catalog and generated documents
         run: python3 scripts/arsenal.py check
-      - name: Run original privacy guard tests
-        run: python3 -m unittest discover -s tests -p 'test_privacy_guard.py' -v
+      - name: Run original tool regression tests
+        run: python3 -m unittest discover -s tests -v
       - name: Verify synthetic privacy fixture report
         run: python3 scripts/check_privacy_fixtures.py --check-report examples/privacy-guard-results.json
