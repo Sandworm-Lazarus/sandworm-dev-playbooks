@@ -62,3 +62,18 @@ Selections overlap where tools support multiple tasks. Do not add collection cou
 
 - [Three original playbooks](playbooks/review-agent-extension.md) for extension review, evidence-backed diffs and model comparison.
 - [Five report templates](templates/README.md) for findings, threat models, model evals, extension reviews and detection rules.
+
+## Original utility: privacy guard
+
+Use the local Python [privacy guard](docs/privacy-guard.md) to apply explicit field policies and text masking to synthetic text or JSON. It uses the standard library and makes no network requests. Read the documented coverage and limits before using its output.
+
+```bash
+printf '%s\n' '{"customer_name":"Synthetic Person","message":"Email nina@example.invalid"}' | python3 scripts/privacy_guard.py json --sensitive-field customer_name
+python3 -m unittest discover -s tests -p 'test_privacy_guard.py' -v
+```
+
+The [synthetic privacy fixtures](examples/privacy-fixtures.json) describe acceptance cases; they are not a Presidio or general PII-detection benchmark.
+
+Read the [original-tool development case study](docs/development-notes/2026-11-11-original-tools.md) for implementation decisions and verification evidence.
+
+Reproduce the committed fixture report with `python3 scripts/check_privacy_fixtures.py --check-report examples/privacy-guard-results.json`.

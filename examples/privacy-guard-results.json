@@ -1,0 +1,63 @@
+{
+  "all_passed": true,
+  "cases": [
+    {
+      "id": "email-in-thai-text",
+      "passed": true
+    },
+    {
+      "id": "email-in-english-text",
+      "passed": true
+    },
+    {
+      "id": "explicit-name-field",
+      "passed": true
+    },
+    {
+      "id": "benign-version-number",
+      "passed": true
+    },
+    {
+      "id": "already-masked",
+      "passed": true
+    },
+    {
+      "id": "empty-input",
+      "passed": true
+    },
+    {
+      "id": "recursive-json-values",
+      "passed": true
+    },
+    {
+      "id": "configured-sensitive-field",
+      "passed": true
+    },
+    {
+      "id": "whole-sensitive-subtree",
+      "passed": true
+    },
+    {
+      "id": "multiple-addresses-and-punctuation",
+      "passed": true
+    },
+    {
+      "id": "keys-and-free-form-names-are-preserved",
+      "passed": true
+    },
+    {
+      "id": "null-sensitive-value",
+      "passed": true
+    }
+  ],
+  "cases_passed": 12,
+  "cases_total": 12,
+  "schema_version": 1,
+  "scope": "Synthetic email and explicit JSON-field masking cases only. No upstream runtime or general PII coverage claim.",
+  "source_sha256": {
+    "fixtures": "786007308602ecd9ee689671ed4912a0b479ac0e3229ee31bffc92f9801aafff",
+    "guard": "3517f3fbdecf126ff159131623211dc679e36a34b2d9e04247707a83bf192ed4",
+    "runner": "db38f2e0d6c238eb4468bcd418775c921edc070d374d21f7518afedfd24fb2d4"
+  },
+  "tool": "Sandworm Privacy Guard"
+}

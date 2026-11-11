@@ -59,7 +59,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [vercel-composition-patterns](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/composition-patterns/SKILL.md) | ปรับ React component API ด้วย composition และ compound components | entry-overview |
 | [vercel-react-best-practices](https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices/SKILL.md) | ลด waterfalls, bundle และการ render ที่ไม่จำเป็นใน React/Next.js | entry-overview |
 
-## Synthetic privacy trial
+## Original privacy guard
 
-Use the original [privacy policy fixtures](../examples/privacy-fixtures.json) to define expected masking behavior in a prototype. Include Thai text, explicit sensitive fields, benign version numbers, already masked values and empty input. These are proposed acceptance criteria; configure your own adapter and recognizers and record observed results before claiming support.
+Run the original [local privacy utility](privacy-guard.md) against the [synthetic policy fixtures](../examples/privacy-fixtures.json). Record its documented field policy, input budgets and masking limits. These cases do not establish general PII-detection coverage or Presidio behavior.
 

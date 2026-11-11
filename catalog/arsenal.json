@@ -1356,7 +1356,7 @@
       "reviewed_at": "2026-11-11"
     }
   ],
-  "snapshot": "2026-11-11-sandworm-dev-playbooks",
+  "snapshot": "2026-11-11-mcp-typescript-privacy-sandworm-dev-playbooks",
   "collection": {
     "name": "sandworm-dev-playbooks",
     "hub": "https://github.com/Sandworm-Lazarus/sandworm-arsenal",

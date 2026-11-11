@@ -28,3 +28,16 @@ Entry หมายถึงเคยอ่านไฟล์ entry ในงา�
 งานคัดสรรและคู่มือของเราใช้ [MIT](LICENSE) ส่วนผลงานภายนอกใช้ license ของเจ้าของตาม [SOURCES.md](SOURCES.md) การอยู่ในคลังไม่ได้แปลว่าเป็นผลงานที่เราเขียนทั้งหมด
 
 เครื่องมือบางตัวอยู่ได้มากกว่าหนึ่งคลังตามบริบทการใช้งาน จึงไม่ควรนำจำนวนจากทุก repo มาบวกเป็นจำนวนโครงการไม่ซ้ำ
+
+## เครื่องมือที่พัฒนาเอง: privacy guard
+
+ใช้ [privacy guard](docs/privacy-guard.md) เพื่อใช้นโยบายปิดบัง field ที่ระบุและข้อความสังเคราะห์แบบ local ด้วย Python standard library โดยไม่มี network requests อ่านขอบเขตและข้อจำกัดในคู่มือก่อนนำผลไปใช้
+
+```bash
+printf '%s\n' '{"customer_name":"Synthetic Person","message":"Email nina@example.invalid"}' | python3 scripts/privacy_guard.py json --sensitive-field customer_name
+python3 -m unittest discover -s tests -p 'test_privacy_guard.py' -v
+```
+
+[ชุดข้อมูลสังเคราะห์](examples/privacy-fixtures.json) เป็นกรณีทดสอบตามนโยบาย ไม่ใช่ผล benchmark ของ Presidio หรือการรับรองว่าค้นพบ PII ครบ
+
+อ่าน [กรณีศึกษาการพัฒนาเครื่องมือของเรา](docs/development-notes/2026-11-11-original-tools.md) สำหรับเหตุผลการออกแบบและหลักฐานการตรวจสอบ
